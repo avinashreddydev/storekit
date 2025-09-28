@@ -1,13 +1,31 @@
-# StoreKit Environment
-
-## Overview
-
-This is a custom environment for the StoreKit project. It is a gymnasium environment that allows for the training of a reinforcement learning agent to simulate a store.
-The agent will replenish the shelves with products, and the customer will come in and buy products. The agent will receive a reward for each product sold.
+# Storekit Environment along with the RL agents
 
 ## Installation
 
+
+### Preliminaries 
+
+Install the UV package manager from the Astral 
+  
+```bash 
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+
+Download the repo and install the relavent libraries 
+
 ```bash
 uv sync
+```
+This will download all the packages and create a vritual environment `.venv` folder and activate it for running the experiments. The below command is for the Mac/Linux 
+
+```bash
+source .venv/bin/activate
+```
+
+For Windows 
+
+```bash
+.venv\Scripts\activate
 ```
 
