@@ -168,7 +168,7 @@ class StoreEnv(gym.Env):
                 "moy":       np.array(moy_hist, dtype=np.float32),
             }
 
-        return observation, {}
+        return observation, {"terminated": False, "truncated": False}
 
     def step(self, action: np.ndarray):
         # --- parse action robustly ---
